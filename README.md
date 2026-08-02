@@ -22,6 +22,7 @@ Access method: Accessed via bastion to safely connect to server without exposing
 5. Changed network settings for Network Interface to ensure a static IP address
 6. Enable Azure Bastion
 7. Connected to server via Bastion
-
+8. Installed Active Directory, DHCP, DNS, Group Policy Management, and print server
+9. Promoted Server to Domain Controller and made some test users in ADUC
 
 
