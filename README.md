@@ -13,22 +13,35 @@ Purpose: Future active directory domain controller
 
 Access method: Accessed via bastion to safely connect to server without exposing RDP to the public.
 
-## Deployment Steps
+## Lab Progress
 
-1. Created Azure resource group
-2. Created virtual network
-3. Created windows server VM
-4. Created Admin Account
-5. Changed network settings for Network Interface to ensure a static IP address
-6. Enable Azure Bastion
-7. Connected to server via Bastion
-8. Installed Active Directory, DHCP, DNS, Group Policy Management, and print server
-9. Promoted Server to Domain Controller and made some test users in ADUC
+### Infrastructure Setup
+
+1. Created an Azure Resource Group.
+2. Created an Azure Virtual Network (VNet).
+3. Deployed a Windows Server 2022 Virtual Machine.
+4. Created a local administrator account for the server.
+5. Configured the VM's network interface with a static private IP address.
+6. Enabled Azure Bastion for secure remote access.
+7. Connected to the server using Azure Bastion.
+8. Installed the following Windows Server roles:
+
+   * Active Directory Domain Services (AD DS)
+   * DNS Server
+   * DHCP Server
+   * Group Policy Management
+   * Print and Document Services
+9. Promoted the server to a Domain Controller.
+10. Created test users and Organizational Units (OUs) in Active Directory Users and Computers (ADUC).
 
 ## Lab Exercises
-1. Simulated user calling in because they forgot password to get familiar with where password reset was located within ADUC.
-2. Created multiple groups simulating different branch locations and different departments within each branch.
-3. Created more users and adding them to the different Organizational Groups.
-4. Learned about copying user from known group when making a new user that will be in that same group. Doing this automatically assigns that user the same GPOs as copied user. This makes the process of creating a new user much faster and easier.
+
+1. Simulated a help desk password reset request by locating and using the password reset functionality in Active Directory Users and Computers (ADUC).
+2. Created Organizational Units (OUs) to represent multiple company locations and departments.
+3. Created additional user accounts and organized them into the appropriate OUs.
+4. Created security groups to represent departments and assigned users to the appropriate groups.
+5. Practiced copying an existing user account to quickly provision a new employee with similar account settings and group memberships.
+6. Explored Active Directory object properties using the Attribute Editor.
+7. Gained familiarity with the layout and day-to-day administration of Active Directory Users and Computers.
 
 
