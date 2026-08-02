@@ -25,4 +25,10 @@ Access method: Accessed via bastion to safely connect to server without exposing
 8. Installed Active Directory, DHCP, DNS, Group Policy Management, and print server
 9. Promoted Server to Domain Controller and made some test users in ADUC
 
+## Lab Exercises
+1. Simulated user calling in because they forgot password to get familiar with where password reset was located within ADUC.
+2. Created multiple groups simulating different branch locations and different departments within each branch.
+3. Created more users and adding them to the different Organizational Groups.
+4. Learned about copying user from known group when making a new user that will be in that same group. Doing this automatically assigns that user the same GPOs as copied user. This makes the process of creating a new user much faster and easier.
+
 
