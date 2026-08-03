@@ -9,7 +9,7 @@ Cloud Provider: Microsoft Azure
 
 Image/OS: Windows 2022 Datacenter Azure edition
 
-Purpose: Future active directory domain controller
+Purpose: Active directory domain controller
 
 Access method: Accessed via bastion to safely connect to server without exposing RDP to the public.
 
